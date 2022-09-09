@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'posts', to: 'posts#index'
-  get 'posts/new', to: 'posts#new'
+  root to: 'posts#index' #新規投稿ページへの遷移は行わない
   post 'posts', to: 'posts#create'
 end
